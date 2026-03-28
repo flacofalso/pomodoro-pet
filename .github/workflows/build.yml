@@ -33,7 +33,7 @@ jobs:
 
       - name: Construir .app con PyInstaller
         run: |
-          pyinstaller pomodoro_pet.spec --noconfirm
+          pyinstaller pomodoro_pet.spec --noconfirm --target-arch x86_64
 
       - name: Comprimir .app en ZIP
         run: |
